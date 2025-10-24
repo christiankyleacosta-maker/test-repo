@@ -128,3 +128,11 @@ div {
     padding: 16px;
     font-family: "lucida handwriting", cursive;
 }
+@media (max-width: 600px) {
+    .arrow.left {
+        left: 10px;
+    }
+    .arrow.right {
+        right: 10px;
+    }
+}
