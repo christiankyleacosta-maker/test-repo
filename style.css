@@ -1,48 +1,130 @@
-body{
+
+/* Layout & base */
+* { box-sizing: border-box; }
+body {
+    margin: 0;
+    font-family: 'Lucida Handwriting', cursive;
     background-color: antiquewhite;
+    color: #111;
 }
-div {
+
+/* Header */
+.site-header {
     background-color: chocolate;
-    font-family: 'Lucida Handwriting', cursive;
-    font-size: 75px;
-    color: aliceblue;
-    margin-bottom: auto;
-    text-align: center;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-h1{
-    width: 100%;
-    height: 320px;
-    flex-wrap: wrap;
-    background-image: url("header.gif");
-    text-align: center;
-    font-size: 64px;
-    color: aliceblue;
-    font-family: 'Lucida Handwriting', cursive;
-    align-content: center;
-}
-ul{
-    list-style-type: none;
-    margin: 0%;
-    padding: 0%;
-    font-family: 'Lucida Handwriting', cursive;
-    flex-wrap: wrap;
-    font-style: normal;
-    overflow: hidden;
-    background-color: chocolate;
-}
-li{
-    float: inline-start;
-}
-li a {
-    display: block;
     color: aliceblue;
     text-align: center;
     padding: 16px;
-    text-decoration: none;
-    flex-wrap: wrap;
 }
-li a:hover{
-    background-color: brown;
+.site-title {
+    font-size: 28px;
+    font-weight: 700;
+}
+.site-header h1 {
+    margin: 8px 0 0;
+    font-size: 36px;
+    background-image: url("head.gif");
+    background-size: cover;
+    color: aliceblue;
+    padding: 34px 0;
+}
+
+/* Navigation */
+.main-nav {
+    list-style: none;
+    margin: 12px 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+.main-nav li { margin: 0; }
+.main-nav a {
+    display: inline-block;
+    padding: 10px 14px;
+    color: aliceblue;
+    text-decoration: none;
+    background-color: chocolate;
+    border-radius: 6px;
+}
+.main-nav a:hover { background-color: brown; }
+
+/* Gallery grid */
+.gallery-grid {
+    max-width: 1200px;
+    margin: 24px auto;
+    padding: 0 16px 48px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+/* Card styles */
+.response {
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    text-align: center;
+}
+*{
+    .response:hover {
+        box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+        transform: translateY(-6px);
+        transition: all 0.3s ease;
+    }
+}
+div.gallery { display: flex; flex-direction: column; height: 100%; }
+div.gallery img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+div.desc {
+    padding: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: normal;
+    background: #fafafa;
+    flex-grow: 1;
+}
+
+/* Utility */
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive tweaks */
+@media (max-width: 700px) {
+    .site-header h1 { font-size: 28px; padding: 18px 0; }
+}
+div {
+    background-color: chocolate;
+    font-family: "lucida handwriting", cursive;
+    font-weight: bold;
+    font-style: italic;
+    padding: 10px;
+    justify-content: center;
+    text-align: center;
+    color: rgb(43, 30, 4);
+}
+.feedback-form {
+    color: brown;
+    justify-content: center;
+    text-align: center;
+}
+.contact-info {
+    color: brown;
+    justify-content: center;
+    font-family: "lucida handwriting", cursive;
+    justify-content: center;
+    text-align: center;
+    padding: auto;
+}
+.contactheader {
+    background-color: chocolate;
+    color: aliceblue;
+    text-align: center;
+    padding: 16px;
+    font-family: "lucida handwriting", cursive;
 }
