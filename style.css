@@ -136,3 +136,7 @@ div {
         right: 10px;
     }
 }
+.textured-background {
+background-image: url("bgdesert.jpg");
+background-size: cover;
+}
