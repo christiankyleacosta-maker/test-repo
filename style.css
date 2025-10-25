@@ -140,3 +140,18 @@ div {
 background-image: url("bgdesert.jpg");
 background-size: cover;
 }
+.about-info {
+    color: brown;
+    justify-content: center;
+    font-family: "lucida handwriting", cursive;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}  
+.order-form {
+    color: brown;
+    justify-content: center;
+    text-align: center;
+    font-family: "lucida handwriting", cursive;
+    padding: 20px;
+}
