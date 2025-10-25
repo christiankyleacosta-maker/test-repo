@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <title>Contact - PC PARTS SHOP</title>
+    <title>Type your order - PC PARTS SHOP</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="textured-background">
@@ -13,24 +13,30 @@
                 <li><a href="index.html" target="_self">Home</a></li>
                 <li><a href="order.html" target="_self">Order</a></li>
                 <li><a href="contact.html" target="_self">Contact</a></li>
-                <li`><a href="aboutUs.html" target="_self">About</a></li>
+                <li><a href="aboutUs.html" target="_self">About</a></li>
             </ul>
         </nav>
     </header>
 
-    <main class="contact-info">
-        <h1 class="contactheader">Contact us through</h1>
+    <main class="order-form">
+        <h1 class="orderheader">Place your order here</h1>
         <br>
-        <h4 href="mailto:someone@example.com" method="post">Gmail: PartsShop@gmail.com</h4>
-        <br>
-        <h4>Contact No: 0996-4326-625</h4>
-        <br>
-        <h4>Facebook: @PC Parts Shop</h4>
-        <br>
-        <h4>Youtube: @PCpartsShop</h4>
-    </main>
-    
+        <form action="#" method="post">
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
 
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="product">Product Name:</label><br>
+            <input type="text" id="product" name="product" required><br><br>
+
+            <label for="quantity">Quantity:</label><br>
+            <input type="number" id="quantity" name="quantity" min="1" required><br><br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </main>
     <footer>
         <div class="footer-content">
             <p>Follow us on social media!</p>
